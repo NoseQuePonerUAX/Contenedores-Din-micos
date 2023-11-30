@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.26)
+project(Cole_De_Ejerc_Conten_Dinam)
+
+set(CMAKE_CXX_STANDARD 17)
+set(BOOST_ROOT "C:/boost_1_70_0")
+set(BOOSTROOT "C:/boost_1_70_0")
+find_package(Boost 1.70.0)
+set(Boost_INCLUDE_DIR C:/boost_1_70_0/)
+set(Boost_LIBRARY_DIR C:/boost_1_70_0/stage/lib)
+include_directories(${Boost_INCLUDE_DIR})
+link_directories(${Boost_LIBRARY_DIR})
+add_executable(Cole_De_Ejerc_Conten_Dinam main.cpp)
